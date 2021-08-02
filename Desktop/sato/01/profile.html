@@ -10,7 +10,7 @@
             dl {
                 font-size: 20px;
                 letter-spacing: 1px;
-                margin: 20px 0px 0px 0px;
+                margin: 20px 0px 0px 350px;
                 position: absolute;
                 left: 50%;
                 top: 10px;
@@ -23,16 +23,63 @@
               	float: right;
               	margin-left: 20px;
             }
+            img{
+                text-align: center;
+            }
+            #Logo {
+	               width: 100%;
+	               text-align: center;
+	               padding: 300px 0px 300px 0px;
+	               font-size: 30px;
+	               letter-spacing: 3px;
+	              }
+            #Logo,
+            #Logo h1,
+            #Logo h1 a {
+	                    background-color: #E5E2D9;
+                        /*font-family : 'ヒラギノ丸ゴ Pro W4',"Hiragino Maru Gothic Pro",sans-serif;
+                    */}
+
+            #Logo h1,
+            #Logo h1 a {
+	                   display: inline;
+                       /*font-family : 'ヒラギノ丸ゴ Pro W4',"Hiragino Maru Gothic Pro",sans-serif;*/
+	                   }
+            #Profile p{
+                text-align-last: center;
+                font-size: 20px;
+            }
+
+            #img{
+                margin: 0px -42px 50px -42px;
+            }
         </style>
     </head>
 
     <body>
-        <h1>Ishii Sato Profile</h1>
-        <img src="img/hana.JPG" alt="hana">
+        <div id="Logo">
+            <h1><a href="./profile.html">Ishii Sato Profile</h1>
+        </div>
+
+        <div style="text-align: center;">
+            <!--<img src="img/hana.JPG" alt="hana">-->
+        </div>
         <div id="Header">
             <dl>
                 <dd><a href="./profile.html">Profile</a>　<a href="./Hobby.html">Hobby</a>　<a href="./Skill.html">skill</a></dd>
             </dl>
+        </div>
+        <div id="Profile">
+            <p>1998.11.11<br>
+                会津大学コンピュータ理工学部卒<br>
+                css、わけがわかりませんが楽しいでございます。
+            </p>
+        </div>
+
+        <div id="img">
+            <a href="./profile.html"><img src="img/profile.jpg" alt="Profile" width=250></a>
+            <a href="./Hobby.html"><img src="img/hobby.jpg" alt="hobby" width=250></a>
+            <a href="./Skill.html"><img src="img/skill.jpg" alt="skill" width=250></a>
         </div>
   </body>
 
