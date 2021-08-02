@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* reset */
+@import url(reset.css);
+
+/* ヘッダー ------------------------------------------------------------ */
+#Header {
+	width: 100%;
+	text-align: center;
+	z-index: 99;
+	position: fixed;
+	left: 0;
+	top: 0;
+	}
