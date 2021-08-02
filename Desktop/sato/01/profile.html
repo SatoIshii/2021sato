@@ -5,82 +5,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ishii Sato Profile</title>
         <link rel="stylesheet" href="css/style.css">
-        <style>
-            h1{}
-            dl {
-                font-size: 20px;
-                letter-spacing: 1px;
-                margin: 20px 0px 0px 350px;
-                position: absolute;
-                left: 50%;
-                top: 10px;
-            }
-            a {
-	            color: #493C3B;
-                display: inline;
-	        }
-            dd {
-              	float: right;
-              	margin-left: 20px;
-            }
-            img{
-                text-align: center;
-            }
-            #Logo {
-	               width: 100%;
-	               text-align: center;
-	               padding: 300px 0px 300px 0px;
-	               font-size: 30px;
-	               letter-spacing: 3px;
-	              }
-            #Logo,
-            #Logo h1,
-            #Logo h1 a {
-	                    background-color: #E5E2D9;
-                        /*font-family : 'ヒラギノ丸ゴ Pro W4',"Hiragino Maru Gothic Pro",sans-serif;
-                    */}
-
-            #Logo h1,
-            #Logo h1 a {
-	                   display: inline;
-                       /*font-family : 'ヒラギノ丸ゴ Pro W4',"Hiragino Maru Gothic Pro",sans-serif;*/
-	                   }
-            #Profile p{
-                text-align-last: center;
-                font-size: 20px;
-            }
-
-            #img{
-                margin: 0px -42px 50px -42px;
-            }
-        </style>
     </head>
 
     <body>
-        <div id="Logo">
-            <h1><a href="./profile.html">Ishii Sato Profile</h1>
-        </div>
-
-        <div style="text-align: center;">
-            <!--<img src="img/hana.JPG" alt="hana">-->
-        </div>
-        <div id="Header">
+        <Header>
             <dl>
                 <dd><a href="./profile.html">Profile</a>　<a href="./Hobby.html">Hobby</a>　<a href="./Skill.html">skill</a></dd>
             </dl>
+        </Header>
+
+        <main>
+            <h1><a href="./profile.html">Ishii Sato Profile</h1>
+        </main>
+<!--
+        <div style="text-align: center;">
+            <img src="img/hana.JPG" alt="hana">
         </div>
+-->
+        <section class="img">
+            <a class="Item" href="./profile.html"><img src="img/profile.jpg" alt="Profile" width=250></a>
+            <a class="Item" href="./Hobby.html"><img src="img/hobby.jpg" alt="hobby" width=250></a>
+            <a class="Item" href="./Skill.html"><img src="img/skill.jpg" alt="skill" width=250></a>
+        </section>
+
         <div id="Profile">
             <p>1998.11.11<br>
+                福島県郡山市出身<br>
                 会津大学コンピュータ理工学部卒<br>
                 css、わけがわかりませんが楽しいでございます。
             </p>
         </div>
+        <table border= "1">
+    <tr>
+        <th>タグ</th>
+        <th>目的</th>
+    </tr>
+    <tr>
+        <td>table</td>
+        <td>表を示すタグ。表全体を囲む。</td>
+    </tr>
+</table>
 
-        <div id="img">
-            <a href="./profile.html"><img src="img/profile.jpg" alt="Profile" width=250></a>
-            <a href="./Hobby.html"><img src="img/hobby.jpg" alt="hobby" width=250></a>
-            <a href="./Skill.html"><img src="img/skill.jpg" alt="skill" width=250></a>
-        </div>
   </body>
 
 </html>
