@@ -1,0 +1,8 @@
+@charset "UTF-8";
+.main{
+    display: flex;
+}
+h2{
+    font-family: century Gothic;
+    font-size: 25px;
+}
