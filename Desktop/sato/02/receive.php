@@ -47,7 +47,9 @@
             <tr>
                 <td>趣味</td>
                 <td><input type="checkbox" name="hobby" value="釣り"> 釣り
-                    <input type="checkbox" name="hobby" value="酒"> 日本酒
+                    <input type="checkbox" name="hobby" value="日本酒"> 日本酒
+                    <input type="checkbox" name="hobby" value="キャンプ"> キャンプ
+                    <input type="checkbox" name="hobby" value="読書"> 読書
                 </td>
             </tr>
             <tr>
@@ -67,7 +69,11 @@
         }
         if(isset($_POST['gender'])) {
             $gender = $_POST['gender'];
-            echo $gender;
+            echo $gender. '<br>';
+        }
+        if(isset($_POST['hobby'])) {
+            $syumi = $_POST['hobby'];
+            echo $syumi;
         }
     ?>
 
