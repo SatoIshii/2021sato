@@ -8,7 +8,7 @@
   <body>
       <h1>ログインページ</h1>
       <p>会員IDとパスワードを入力してください。</p>
-      <form method='post' action='result01.php'>
+      <form method='post' action='result02.php'>
           <table>
               <tr>
                   <td>会員ID：</td>
