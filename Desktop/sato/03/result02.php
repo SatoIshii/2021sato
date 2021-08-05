@@ -26,11 +26,11 @@
 
       <?php
         //ゴールド会員を設定
-        $gold_pw = "ishii";
         $gold_id = "sato";
+        $gold_pw = "ishii";
         //ノーマル会員
-        $reg_pw = "webrage01";
         $reg_id = "webrage";
+        $reg_pw = "webrage01";
         //判定
         if($gold_id == $_POST['id'] AND $gold_pw == $_POST['password']){
             echo "<br>ゴールド会員です。<br>";
