@@ -19,8 +19,8 @@
       <table border="1" style="border-collapse:collapse;">
           <?php
           for($i=0;$i<$_POST['num'];$i++){
-              echo "<tr><td>石井</td><td>矢吹</td><td>和田</td></tr>";
-          }
+            echo "<tr><td>ishii</td></tr>";
+            }
           ?>
       </table>
 
