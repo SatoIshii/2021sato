@@ -13,6 +13,17 @@
 
       // 配列の内容を表示
       var_dump($fruit);
+      
+      // 出力
+      echo "<hr>";
+      foreach($fruit as $each){
+        echo $each . "<br/>";
+      }
+      echo "<hr>";
+
+      foreach($fruit as $key => $value){
+        echo $key . "番目の要素は" . $value . "です。<br/>";
+      }
 
       // 検索する文字列
       $needle = "みかん";
