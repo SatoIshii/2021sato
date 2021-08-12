@@ -3,44 +3,50 @@
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>連想配列</title>
+    <title>multiloop03</title>
   </head>
   <body>
-      <h1>連想配列</h1>
+      <h1>JOJO</h1>
+      <h2>ジョジョキャラクター</h2>
       <?php
-          $player01 = array(
-              "name" => "佐野恵太",
-              "position" => "外野手",
-              "from" => "岡山",
-              "num" => "2017"
-              "sum" => ""
+        #データ格納
+          $jojo01 = array(
+              "name" => "ジョセフ・ジョースター",
+              "stand" => "ハーミット・パープル",
+              "season" => "「戦闘潮流」",
+              "num" => "2"
           );
-          $player02 =  array(
-              "name" => "佐野恵太",
-              "position" => "外野手",
-              "from" => "岡山",
-              "num" => "2017",
+          $jojo02 =  array(
+              "name" => "空条承太郎",
+              "stand" => "スタープラチナ",
+              "season" => "「スターダストクルセイダース」",
+              "num" => "3"
           );
-          $player03 =  array(
-              "name" => "佐野恵太",
-              "position" => "外野手",
-              "from" => "岡山",
-              "num" => "2017"
+          $jojo03 =  array(
+              "name" => "東方仗助",
+              "stand" => "クレイジーダイアモンド",
+              "season" => "「ダイアモンドは砕けない」",
+              "num" => "4"
+          );
+          $jojo04 =  array(
+              "name" => "ジョルノ・ジョバーナ",
+              "stand" => "ゴールド・エクスペリエンス",
+              "season" => "「黄金の風」",
+              "num" => "5"
           );
 
-          $players = array($player01, $player02, $player03);
+        #二次元配列作成
+          $jojo= array($jojo01, $jojo02, $jojo03, $jojo04);
+
+        #表出力
           echo "<table><tr>
-                    <th>背番号</th>
                     <th>名前</th>
-                    <th>ポジション</th>
-                    <th>出身地</th>
-                    <th>入団年</th></tr>";
-          foreach($players as $each){
-              echo  "<tr><td>". $each['id'] . "</td><td>"
-                     . $each['name'] . "</td><td>"
-                     . $each['position'] . "</td><td>"
-                     . $each['from'] . "</td><td>"
-                     . $each['year'] . "</td></tr>";
+                    <th>スタンド</th>
+                    <th>シーズン</th></tr>";
+          foreach($jojo as $each){
+              echo  "<tr><td>". $each['name'] . "</td><td>"
+                     . $each['stand'] . "</td><td>第"
+                     .$each['num'] . "部" . $each['season'] . "</td></tr>";
           }
           echo "</table>";
     ?>
