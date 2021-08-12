@@ -16,18 +16,31 @@
             background: #4A4D58;
             color: #fff;
         }
+<<<<<<< HEAD
+=======
+        .col02{
+            background-color :#CBBFB0;
+        }
+>>>>>>> fcfa42d20b4d0dbfc8cbe5fbdee715b0e981a055
     </style>
   </head>
   <body>
       <h1>DB通信テスト02</h1>
       <?php
+<<<<<<< HEAD
         # DBアクセス
+=======
+>>>>>>> fcfa42d20b4d0dbfc8cbe5fbdee715b0e981a055
         $DB_DSN = "mysql:host=localhost; dbname=sishii; charset=utf8";
         $DB_USER = "webaccess";
         $DB_PW = "toMeu4rH";
         $pdo = new PDO($DB_DSN, $DB_USER, $DB_PW);
 
+<<<<<<< HEAD
         #SQL文を変数に代入
+=======
+
+>>>>>>> fcfa42d20b4d0dbfc8cbe5fbdee715b0e981a055
         $query_str = "SELECT * FROM test WHERE 1"; // 実行するSQL文を作成して変数に保持
 
         echo $query_str;                                    // 実行するSQL文を画面に表示するだけ（デバッグプリント
@@ -36,7 +49,10 @@
         $result = $sql->fetchAll();                         // 実行結果を取得して$resultに代入する
         $i=0;
 
+<<<<<<< HEAD
         #出力
+=======
+>>>>>>> fcfa42d20b4d0dbfc8cbe5fbdee715b0e981a055
         echo "<table><tr><th>料理名</th><th>値段</th><th>ジャンル</th><th>メモ</th></tr>";
 
         foreach($result as $each){
