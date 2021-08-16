@@ -7,5 +7,6 @@
   </head>
   <body>
       <h1>detail01.php</h1>
+      <p>Cチーム</p>
   </body>
 </html>
