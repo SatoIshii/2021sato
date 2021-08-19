@@ -7,6 +7,10 @@
   </head>
   <body>
       <h1>都道府県</h1>
+      <a href="./hashtest01.php">05/hashtest01</a>
+      <a href="./hashtest02.php">05/hashtest02</a>
+      <a href="./multiloop02.php">05/multiloop02</a>
+      <a href="./multiloop03.php">05/multiloop03</a>
       <?php
           $hokkaido = array("北海道");
           $tohoku  = array("青森", "秋田", "岩手", "山形", "宮城","福島");
@@ -20,6 +24,7 @@
           $japan = array($hokkaido, $tohoku, $kanto, $tyubu, $kansai, $tyugoku, $sikoku, $kyusyu);
           $area = array("北海道","東北","関東","中部","関西","中国","四国","九州");
           $i=0;
+          //出力
           echo "<table><tr><th>地方</th><th>県</th></tr>";
           foreach($japan as $each){
                   echo "<tr><th>". $area[$i] ."</th>";

@@ -8,18 +8,26 @@
   <body>
       <h1>配列</h1>
       <?php
-      $fruit = array("りんご", "すいか", "みかん", "なし", "イチゴ", "かき");
-      echo "<hr>";
+      // サンプル
+     $fruit = array("りんご", "すいか", "みかん", "なし", "イチゴ", "かき");
 
-      foreach($fruit as $each){
-          echo $each . "<br/>";
-      }
+     echo $fruit[3]; // なし と表示される
 
-      echo "<hr>";
+     echo $fruit[0]; // りんご と表示される
 
-      foreach($fruit as $key => $value){
-          echo $key . "番目の要素は" . $value . "です。<br/>";
-      }
+     echo $fruit[9]; // エラーになる
+
+     $fruit[2] = "いちじく"; // 上書きされる
+
+     $fruit[6] = "キウイ"; // 追加される
+     echo "<hr>";
+     var_dump($fruit); // 配列の中身がすべて表示される
       ?>
+      <hr>
+      <!--ブラウザで表示させるときは<pre>で囲むと見やすく表示される-->
+      <pre>
+      <?php var_dump($fruit); ?>
+      </pre>
+
   </body>
 </html>

@@ -7,6 +7,10 @@
   </head>
   <body>
       <h1>JOJO</h1>
+      <a href="./hashtest01.php">05/hashtest01</a>
+      <a href="./hashtest02.php">05/hashtest02</a>
+      <a href="./multiloop01.php">05/multiloop01</a>
+      <a href="./multiloop02.php">05/multiloop02</a>
       <h2>ジョジョキャラクター</h2>
       <?php
         #データ格納

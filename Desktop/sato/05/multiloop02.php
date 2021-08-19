@@ -7,25 +7,32 @@
   </head>
   <body>
       <h1>連想配列</h1>
+      <a href="./hashtest01.php">05/hashtest01</a>
+      <a href="./hashtest02.php">05/hashtest02</a>
+      <a href="./multiloop01.php">05/multiloop01</a>
+      <a href="./multiloop03.php">05/multiloop03</a>
+      <hr>
       <?php
           $player01 = array(
-              "name" => "佐野恵太",
+              "name" => "梶谷隆幸",
               "position" => "外野手",
-              "from" => "岡山",
-              "num" => "2017"
-              "sum" => ""
+              "from" => "島根",
+              "year" => "2007",
+              "num" => "3"
           );
           $player02 =  array(
               "name" => "佐野恵太",
-              "position" => "外野手",
+              "position" => "内野手",
               "from" => "岡山",
-              "num" => "2017",
+              "year" => "2017",
+              "num" => "44"
           );
           $player03 =  array(
-              "name" => "佐野恵太",
-              "position" => "外野手",
-              "from" => "岡山",
-              "num" => "2017"
+              "name" => "井納翔一",
+              "position" => "ピッチャー",
+              "from" => "東京",
+              "year" => "2013",
+              "num" => "15"
           );
 
           $players = array($player01, $player02, $player03);
@@ -36,7 +43,7 @@
                     <th>出身地</th>
                     <th>入団年</th></tr>";
           foreach($players as $each){
-              echo  "<tr><td>". $each['id'] . "</td><td>"
+              echo  "<tr><td>". $each['num'] . "</td><td>"
                      . $each['name'] . "</td><td>"
                      . $each['position'] . "</td><td>"
                      . $each['from'] . "</td><td>"
